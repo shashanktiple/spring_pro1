@@ -1,7 +1,7 @@
-package com.example.demo.school;
+package com.example.demo.edu_service;
 
-import com.example.demo.student.StudentRepository;
-import com.fasterxml.jackson.annotation.OptBoolean;
+import com.example.demo.edu_class.School;
+import com.example.demo.edu_repository.SchoolRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.Optional;
 @Service
 public class SchoolService {
 
-    private  SchoolRepository schoolRepository;
+    private SchoolRepository schoolRepository;
 
     @Autowired
     public SchoolService(SchoolRepository schoolRepository) {
