@@ -1,5 +1,7 @@
-package com.example.demo.school;
+package com.example.demo.edu_config;
 
+import com.example.demo.edu_class.School;
+import com.example.demo.edu_repository.SchoolRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

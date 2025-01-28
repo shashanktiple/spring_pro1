@@ -1,6 +1,8 @@
-package com.example.demo.school;
+package com.example.demo.edu_controller;
 
 
+import com.example.demo.edu_class.School;
+import com.example.demo.edu_service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
