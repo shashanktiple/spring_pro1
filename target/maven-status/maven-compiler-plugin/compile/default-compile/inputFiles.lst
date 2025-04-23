@@ -1,0 +1,11 @@
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/DemoApplication.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_class/School.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_class/Student.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_config/SchoolConfig.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_config/StudentConfig.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_controller/SchoolController.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_controller/StudentController.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_repository/SchoolRepository.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_repository/StudentRepository.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_service/SchoolService.java
+/Users/shashank/Spring2/spring_pro1/src/main/java/com/example/demo/edu_service/StudentService.java

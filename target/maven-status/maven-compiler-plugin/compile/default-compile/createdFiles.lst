@@ -1,0 +1,11 @@
+com/example/demo/DemoApplication.class
+com/example/demo/edu_repository/StudentRepository.class
+com/example/demo/edu_config/StudentConfig.class
+com/example/demo/edu_service/SchoolService.class
+com/example/demo/edu_class/Student.class
+com/example/demo/edu_service/StudentService.class
+com/example/demo/edu_class/School.class
+com/example/demo/edu_controller/StudentController.class
+com/example/demo/edu_repository/SchoolRepository.class
+com/example/demo/edu_controller/SchoolController.class
+com/example/demo/edu_config/SchoolConfig.class

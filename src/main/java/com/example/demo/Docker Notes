@@ -1,0 +1,11 @@
+%docker ps -a   --list all containers
+%docker start <container-name>  -- Start the container
+
+--Option 1: Directly access psql inside the container:
+%docker exec -it <container-name> psql -U postgres
+
+--Option 2: Connect from your Mac (if psql is installed locally):
+--Password: Use the password you set when creating the container
+(if you don’t remember, check the container’s env variables with docker inspect <container-name>).
+%psql -h localhost -U postgres
+
