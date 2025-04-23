@@ -1,4 +1,4 @@
-package com.example.demo.edu_class;
+package com.example.demo.dto;
 
 import java.time.LocalDate;
 

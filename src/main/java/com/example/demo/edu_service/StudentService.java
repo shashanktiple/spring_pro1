@@ -1,7 +1,7 @@
 package com.example.demo.edu_service;
 
 import com.example.demo.edu_class.Student;
-import com.example.demo.edu_class.StudentDto;
+import com.example.demo.dto.StudentDto;
 import com.example.demo.edu_repository.StudentRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
