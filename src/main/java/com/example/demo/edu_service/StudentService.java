@@ -1,6 +1,7 @@
 package com.example.demo.edu_service;
 
 import com.example.demo.edu_class.Student;
+import com.example.demo.edu_class.StudentDto;
 import com.example.demo.edu_repository.StudentRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ public class StudentService {
             throw new IllegalStateException("Email already in use");
         }
         studentRepository.save(student);
+        System.out.println("New student added");
     }
 
     public void deleteStudent(Long studentId) {
@@ -39,16 +41,25 @@ public class StudentService {
     }
 
     @Transactional
-    public void updateStudent(Long studentId, String studentName, String studentEmail) {
+    public void updateStudent(Long studentId, String name, String email) {
 
         Student student = studentRepository.findStudentById(studentId)
                 .orElseThrow(() -> new IllegalStateException("Student " + studentId + " does not exist"));
 
-        if (studentName != null && !studentName.isEmpty() && !studentName.equals(student.getName())) {
-            student.setName(studentName);
+        student.setName(name);
+        student.setEmail(email);
         }
-        if (studentEmail != null && !studentEmail.isEmpty() && !studentEmail.equals(student.getEmail())) {
-            student.setEmail(studentEmail);
-        }
+
+    @Transactional
+    public void updateStudentDto(StudentDto dto) {
+
+        Student student = studentRepository.findStudentById(dto.getId())
+                .orElseThrow(() -> new IllegalStateException("Student " + dto.getId() + " does not exist"));
+
+        student.setName(dto.getName());
+        student.setEmail(dto.getEmail());
     }
 }
+
+
+
